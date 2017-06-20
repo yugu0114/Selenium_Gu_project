@@ -13,11 +13,11 @@ public class FindProductInYandexMarketHelper extends FindHtmlElementsInUI implem
     WebElement firstElement;
 
     public void setBrowserForTest(String webBrowserName){
-        switch (webBrowserName){
-            case "Chrome":
+        switch (webBrowserName.toUpperCase()){
+            case "CHROME":
                 setWebDriver(new ChromeDriver());
                 break;
-            case "Firefox":
+            case "FIREFOX":
                 setWebDriver(new FirefoxDriver());
                 break;
             case "IE":
