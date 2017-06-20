@@ -34,10 +34,6 @@ public class Find_In_YandexMarket_Lenovo_or_HP_Laptop_Which_is_Cheaper_than_30_T
         openBrowserInFullscreenModeAndGoToYandexStartPage();
     }
 
-//    public void saveScreenshot() throws IOException {
-//        ScreenshotHelper.saveScreenshot("E:/Selenium_Gu_project/target/testResults/testFindComputersByRangeOnYandexMarket/screenshot_" + screenShotIndex + ".png", webDriver);
-//    }
-
     @After
     public void closeBrowser() throws IOException {
         webDriver.quit();
