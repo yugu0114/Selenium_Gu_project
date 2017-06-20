@@ -17,12 +17,10 @@ public class Find_In_YandexMarket_Lenovo_or_HP_Laptop_Which_is_Cheaper_than_30_T
     private FindProductInYandexMarket findProductHelper = new FindProductInYandexMarketHelper();
 
     protected void setGeckoDriverToSystemProperty(){
-        System.setProperty("webdriver.gecko.driver","E:\\Selenium_Gu_project\\src\\test\\geckoDrivers\\geckodriver64.exe"); // Selenium 3.x
+        System.setProperty("webdriver.gecko.driver","src\\resources\\geckoDrivers\\geckodriver64.exe"); // because I use Selenium 3.x
     }
 
     protected void openBrowserInFullscreenModeAndGoToYandexStartPage(){
-        //yandexMarketUrl = System.getProperty("webdriver.base.url");
-        // webDriver.manage().window().fullscreen();
         webDriver.manage().window().maximize();
         webDriver.switchTo();
         webDriver.get(yandexUrl);
