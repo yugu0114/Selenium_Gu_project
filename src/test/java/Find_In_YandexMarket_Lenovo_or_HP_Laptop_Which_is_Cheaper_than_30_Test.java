@@ -1,0 +1,60 @@
+/**
+ * Created by 1 on 15.06.2017.
+ */
+
+import junit.framework.Assert;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.io.IOException;
+
+public class Find_In_YandexMarket_Lenovo_or_HP_Laptop_Which_is_Cheaper_than_30_Test {
+    private final String yandexUrl = "http://yandex.ru";
+    private WebDriver webDriver;
+    private FindProductInYandexMarket findProductHelper = new FindProductInYandexMarketHelper();
+
+    protected void setGeckoDriverToSystemProperty(){
+        System.setProperty("webdriver.gecko.driver","E:\\Selenium_Gu_project\\src\\test\\geckoDrivers\\geckodriver64.exe"); // Selenium 3.x
+    }
+
+    protected void openBrowserInFullscreenModeAndGoToYandexStartPage(){
+        //yandexMarketUrl = System.getProperty("webdriver.base.url");
+        // webDriver.manage().window().fullscreen();
+        webDriver.manage().window().maximize();
+        webDriver.switchTo();
+        webDriver.get(yandexUrl);
+    }
+
+    @Before
+    public void openFFBrowser() throws IOException {
+        setGeckoDriverToSystemProperty();
+        findProductHelper.setBrowserForTest("Firefox");
+        webDriver = findProductHelper.getWebDriverInstance();    //11 check that link is copied
+        openBrowserInFullscreenModeAndGoToYandexStartPage();
+    }
+
+//    public void saveScreenshot() throws IOException {
+//        ScreenshotHelper.saveScreenshot("E:/Selenium_Gu_project/target/testResults/testFindComputersByRangeOnYandexMarket/screenshot_" + screenShotIndex + ".png", webDriver);
+//    }
+
+    @After
+    public void closeBrowser() throws IOException {
+        webDriver.quit();
+    }
+
+    @Test
+    public void find_In_YandexMarket_Lenovo_or_HP_Laptop_Which_is_Cheaper_than_30(){
+        findProductHelper.navigateIntoYandexService("Маркет");
+        findProductHelper.chooseProductCategory("Компьютеры");
+        findProductHelper.chooseCatalogOfProducts("Ноутбуки");
+        findProductHelper.setPriceInSearchFilter(null, "30000");
+        findProductHelper.checkSearchParameter(new String[]{"Lenovo", "HP"});
+        findProductHelper.pressAcceptButton();
+        //Assert(10, findProductHelper.getCountOfResultsRows());
+        findProductHelper.rememberFirstElement();
+       // findProductHelper.setfindProductHelper.getRememberedFirstElement()
+    }
+}
