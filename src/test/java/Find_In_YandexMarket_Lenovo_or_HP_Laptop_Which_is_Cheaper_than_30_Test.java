@@ -2,53 +2,59 @@
  * Created by 1 on 15.06.2017.
  */
 
-import junit.framework.Assert;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.io.IOException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import webbrowser.instances.FirefoxStandaloneBrowser;
+import yandex.webelements.YandexStartPage;
+import yandex.webelements.servicepages.yandexmarket.YandexMarketServicePage;
 
 public class Find_In_YandexMarket_Lenovo_or_HP_Laptop_Which_is_Cheaper_than_30_Test {
-    private final String yandexUrl = "http://yandex.ru";
-    private WebDriver webDriver;
-    private FindProductInYandexMarket findProductHelper = new FindProductInYandexMarketHelper();
-
-    protected void setGeckoDriverToSystemProperty(){
-        System.setProperty("webdriver.gecko.driver","src\\resources\\geckoDrivers\\geckodriver64.exe"); // because I use Selenium 3.x
-    }
-
-    protected void openBrowserInFullscreenModeAndGoToYandexStartPage(){
-        webDriver.manage().window().maximize();
-        webDriver.switchTo();
-        webDriver.get(yandexUrl);
-    }
+    private WebDriver driver;
+ //   private static int waitingTimeInSeconds;
 
     @Before
-    public void openFFBrowser() throws IOException {
-        setGeckoDriverToSystemProperty();
-        findProductHelper.setBrowserForTest("Firefox");
-        webDriver = findProductHelper.getWebDriverInstance();    //11 check that link is copied
-        openBrowserInFullscreenModeAndGoToYandexStartPage();
+    public void openFFBrowserAndSetItToFullscreen() {
+        driver = FirefoxStandaloneBrowser.getInstance();
+        driver.manage().window().maximize();
+     //   waitingTimeInSeconds = 90;
     }
 
-    @After
-    public void closeBrowser() throws IOException {
-        webDriver.quit();
-    }
+//    public static WebElement waitElementByLocator(By locator)
+//    {
+//         return (new WebDriverWait(webDriver, waitingTimeInSeconds))
+//                    .until(ExpectedConditions.presenceOfElementLocated(locator));
+//    }
 
     @Test
     public void find_In_YandexMarket_Lenovo_or_HP_Laptop_Which_is_Cheaper_than_30(){
-        findProductHelper.navigateIntoYandexService("Маркет");
-        findProductHelper.chooseProductCategory("Компьютеры");
-        findProductHelper.chooseCatalogOfProducts("Ноутбуки");
-        findProductHelper.setPriceInSearchFilter(null, "30000");
-        findProductHelper.checkSearchParameter(new String[]{"Lenovo", "HP"});
-        findProductHelper.pressAcceptButton();
-        //Assert(10, findProductHelper.getCountOfResultsRows());
-        findProductHelper.rememberFirstElement();
-       // findProductHelper.setfindProductHelper.getRememberedFirstElement()
+        try {
+            driver.get("http://yandex.ru");
+
+            YandexStartPage yandexStartPage = new YandexStartPage(driver);
+            YandexMarketServicePage yandexMarketServicePage = (YandexMarketServicePage) yandexStartPage.navigateIntoYandexService("Маркет");
+           //checking
+            yandexMarketServicePage.chooseProductCategory("Компьютеры");
+            yandexMarketServicePage.chooseProductType("Ноутбуки");
+            yandexMarketServicePage.get
+
+        } catch (Exception e){
+
+        }
+
+//        findProductHelper.navigateIntoYandexService("Маркет");
+//        findProductHelper.chooseProductCategory("Компьютеры");
+//        findProductHelper.chooseCatalogOfProducts("Ноутбуки");
+//        findProductHelper.setPriceInSearchFilter(null, "30000");
+//        findProductHelper.checkSearchParameter(new String[]{"Lenovo", "HP"});
+//        findProductHelper.pressAcceptButton();
+//        //Assert(10, findProductHelper.getCountOfResultsRows());
+//        findProductHelper.rememberFirstElement();
+//       // findProductHelper.setfindProductHelper.getRememberedFirstElement()
     }
 }
