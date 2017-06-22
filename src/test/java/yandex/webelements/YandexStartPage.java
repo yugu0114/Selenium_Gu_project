@@ -18,14 +18,10 @@ public class YandexStartPage extends YandexBasePage {
         this.webDriver = webDriver;
     }
 
-    public YandexServicePage navigateIntoAndReturnYandexService(String nameOfService) throws NotSuchServiceException
+    public void openYandexMarketService(String nameOfService) throws NotSuchServiceException
     {
-        webDriver.findElement(By.xpath("//a[@data-id=\"" + nameOfService + "\"]")).click();    //Маркет
-
-        if (nameOfService.equals(YandexStartPageConsts.SERVICE_MARKET))
-            return new YandexMarketServicePage(webDriver);
-        //else if...
-        else
-            throw new NotSuchServiceException();
+        By locator = By.linkText(YandexStartPageConsts.SERVICE_MARKET);
+        waitForLoad(locator);
+        webDriver.findElement(locator).click();    //Маркет
     }
 }

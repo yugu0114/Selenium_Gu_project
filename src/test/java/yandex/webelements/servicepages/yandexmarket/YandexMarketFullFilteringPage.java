@@ -14,15 +14,19 @@ public class YandexMarketFullFilteringPage extends YandexMarketServicePage {
         this.webDriver = webDriver;
     }
 
-    public void clickShowAppropriateButton(){
-        webDriver.findElement(By.className("button_action_show-filtered")).click();  // Показать все подходящие
+    public void performSearchingBySettedConditions(){
+        By locator = By.className("button_action_show-filtered");
+        waitForLoad(locator);
+        webDriver.findElement(locator).click();  // Показать все подходящие
     }
 
-    public void clickClearFiltersButton(){
+    public void pressClearFiltersButton(){
+        waitForLoad(webDriver);
         webDriver.findElement(By.className("button_action_n-filter-reset")).click();   // Сбросить фильтры
     }
 
-    public void clickCancelAndReturnButton(){
+    public void pressCancelAndReturnButton(){
+        waitForLoad(webDriver);
         webDriver.findElement(By.className("button_action_cancel-return")).click(); // Отменить и вернуться
     }
 

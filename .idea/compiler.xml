@@ -26,5 +26,8 @@
         <module name="Selenium_Gu_project" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Selenium_Gu_project" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
