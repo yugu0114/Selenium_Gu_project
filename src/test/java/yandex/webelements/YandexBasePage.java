@@ -19,7 +19,7 @@ public class YandexBasePage {
 
     public YandexBasePage(WebDriver webDriver){
         this.webDriver = webDriver;
-        if (!webDriver.getCurrentUrl().contains(YandexStartPageConsts.YANDEX_DOMAIN)) {
+        if (!webDriver.getCurrentUrl().isEmpty() && !webDriver.getCurrentUrl().contains(YandexStartPageConsts.YANDEX_DOMAIN)) {
             throw new IllegalStateException("This is not the yandex page");
         }
     }

@@ -22,7 +22,7 @@ public class YandexMarketServicePage extends YandexServicePage {
 
     public List<WebElement> getSearchResultList() {
         waitForLoad(webDriver);
-        return webDriver.findElements(By.className("snippet-card__header-text"));
+        return webDriver.findElements(By.xpath("//span[contains(@class,\"snippet-card__header-text\")]"));
     }
 
     public void performSearchingBySettedConditions(){

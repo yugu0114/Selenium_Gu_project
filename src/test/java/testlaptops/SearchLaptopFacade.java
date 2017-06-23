@@ -79,7 +79,7 @@ public class SearchLaptopFacade implements SearchLaptopInterface {
 
     public void checkLaptopMarkLenovo(){
 //        try{
-            YandexMarketServicePage page = (fullFilteringPage == null ? marketPage : fullFilteringPage);
+            YandexMarketServicePage page = (fullFilteringPage == null ? marketPage : fullFilteringPage);//11!! нашли кмоп с помощью расширенного поиска вренулись на ноутбуки, то fullmultiplepage ,будет не налл. нужна лоогическая проверка!
             page.checkBySearchCondition(YandexMarketComputersConsts.LENOVO);
 
 //        } catch(Exception ex) {
