@@ -21,14 +21,14 @@ public class YandexMarketFullFilteringPage extends YandexMarketServicePage {
     }
 
     public void pressClearFiltersButton(){
-        waitForLoad(webDriver);
-        webDriver.findElement(By.className("button_action_n-filter-reset")).click();   // Сбросить фильтры
+        By locator = By.className("button_action_n-filter-reset");
+        waitForLoad(locator);
+        webDriver.findElement(locator).click();   // Сбросить фильтры
     }
 
     public void pressCancelAndReturnButton(){
-        waitForLoad(webDriver);
-        webDriver.findElement(By.className("button_action_cancel-return")).click(); // Отменить и вернуться
+        By locator = By.className("button_action_cancel-return");
+        waitForLoad(locator);
+        webDriver.findElement(locator).click(); // Отменить и вернуться
     }
-
-
 }

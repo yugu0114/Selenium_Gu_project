@@ -19,13 +19,14 @@ public class YandexBasePage {
 
     public YandexBasePage(WebDriver webDriver){
         this.webDriver = webDriver;
-        if (!webDriver.getCurrentUrl().isEmpty() && !webDriver.getCurrentUrl().contains(YandexStartPageConsts.YANDEX_DOMAIN)) {
-            throw new IllegalStateException("This is not the yandex page");
-        }
+        //System.out.println(this.webDriver.getCurrentUrl());
+//        if (!this.webDriver.getCurrentUrl().isEmpty() && !this.webDriver.getCurrentUrl().contains(YandexStartPageConsts.YANDEX_DOMAIN)) {
+//            throw new IllegalStateException("This is not the yandex page");
+//        }
     }
 
-    protected void waitForLoad(WebDriver driver)  {     //11 check it!!!
-        new WebDriverWait(driver, 90).until((ExpectedCondition<Boolean>) wd ->
+    protected void waitForLoad(WebDriver webDriver)  {     //11 check it!!!
+        new WebDriverWait(webDriver, 90).until((ExpectedCondition<Boolean>) wd ->
                 ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
 
     }
@@ -35,6 +36,12 @@ public class YandexBasePage {
         (new WebDriverWait(webDriver, 90))
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
     }
+
+//    protected void waitForClickableState(By locator)  {
+//
+//        (new WebDriverWait(webDriver, 90))
+//                .until(ExpectedConditions.elementToBeClickable(locator));
+//    }
 
 
 //    protected WebElement waitForElement(WebDriver driver, By locator) {

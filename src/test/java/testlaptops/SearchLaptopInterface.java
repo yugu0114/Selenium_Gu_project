@@ -13,6 +13,7 @@ import yandex.webelements.servicepages.yandexmarket.YandexMarketServicePage;
 public interface SearchLaptopInterface {
 
     public void setWebBrowser(WebDriver browser);
+    public WebDriver getWebBrowser();
     public void openYandexMarket();
     public void chooseComputersCategory();
     public void chooseLaptopsCategory();

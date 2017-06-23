@@ -21,13 +21,15 @@ public class YandexMarketServicePage extends YandexServicePage {
     }
 
     public List<WebElement> getSearchResultList() {
-        waitForLoad(webDriver);
+        By locator = By.xpath("//span[contains(@class,\"snippet-card__header-text\")]");
+        waitForLoad(locator);
         return webDriver.findElements(By.xpath("//span[contains(@class,\"snippet-card__header-text\")]"));
     }
 
     public void performSearchingBySettedConditions(){
-        waitForLoad(webDriver);
-        webDriver.findElement(By.xpath("//button [span [.=\"" + YandexMarketConsts.ACCEPT_BUTTON_ON_FILTER + "]]")).click();
+        By locator = By.xpath("//button [span [.=\"" + YandexMarketConsts.ACCEPT_BUTTON_ON_FILTER + "]]");
+        waitForLoad(locator);
+        webDriver.findElement(locator).click();
     }
 
     public void openFilteringPage(){
@@ -38,9 +40,13 @@ public class YandexMarketServicePage extends YandexServicePage {
     }
 
     public void performSearchingProductItemByName(String productName) {
+        By locator = By.id("header-search");
         waitForLoad(webDriver);
-        webDriver.findElement(By.id("header-search")).sendKeys(productName);
-        webDriver.findElement(By.xpath("//button [span [.=\"" + YandexMarketConsts.SEARCH + "\"]]")).click();
+        webDriver.findElement(locator).sendKeys(productName);
+
+        locator = By.xpath("//button [span [.=\"" + YandexMarketConsts.SEARCH + "\"]]");
+//        waitForClickableState(locator);
+        webDriver.findElement(locator).click();
     }
 
     public void setPriceInSearchFilter(String fromPrice, String toPrice)
@@ -60,8 +66,9 @@ public class YandexMarketServicePage extends YandexServicePage {
     }
 
     public void checkBySearchCondition(String searchParameter){
+        By locator = By.xpath("//label[text()=\"" + searchParameter + "\"]");
         waitForLoad(webDriver);
-        webDriver.findElement(By.xpath("//label[text()=\"" + searchParameter + "\"]")).click(); // checkboxes
+        webDriver.findElement(locator).click(); // checkboxes
     }
 
     // e.g. Компьютеры
@@ -75,7 +82,7 @@ public class YandexMarketServicePage extends YandexServicePage {
      //e.g. Ноутбуки
     public void openProductTypeCatalog(String typeOfProduct)
     {
-        By locator = By.xpath("//a[text()=\"" + YandexMarketConsts.LAPTOPS + "\" and contains(@class,\"catalog-menu__list-item\")]");
+        By locator = By.xpath("//a[text()=\"" + typeOfProduct + "\" and contains(@class,\"catalog-menu__list-item\")]");
         waitForLoad(webDriver);
         webDriver.findElement(locator).findElement(locator).click();
     }

@@ -21,7 +21,7 @@ public class YandexStartPage extends YandexBasePage {
     public void openYandexMarketService(String nameOfService) throws NotSuchServiceException
     {
         By locator = By.linkText(YandexStartPageConsts.SERVICE_MARKET);
-        waitForLoad(locator);
+        waitForLoad(webDriver);
         webDriver.findElement(locator).click();    //Маркет
     }
 }

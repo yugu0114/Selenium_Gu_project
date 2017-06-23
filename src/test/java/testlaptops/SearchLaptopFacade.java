@@ -25,14 +25,14 @@ public class SearchLaptopFacade implements SearchLaptopInterface {
     private YandexMarketServicePage marketPage;
     private YandexMarketFullFilteringPage fullFilteringPage;
 
-
-
-
-
     public void setWebBrowser(WebDriver browser){
         webDriver = browser;
         if (startPage == null) startPage = new YandexStartPage(webDriver);
         if (marketPage == null) marketPage = new YandexMarketServicePage(webDriver);
+    }
+
+    public WebDriver getWebBrowser(){
+        return webDriver;
     }
 
     public void openYandexMarket(){
@@ -70,8 +70,7 @@ public class SearchLaptopFacade implements SearchLaptopInterface {
 
     public void setAppropriateLaptopPrice(String fromPrice, String toPrice){
 //        try{
-            YandexMarketServicePage page = (fullFilteringPage == null ? marketPage : fullFilteringPage);
-            page.setPriceInSearchFilter(fromPrice, toPrice);
+            marketPage.setPriceInSearchFilter(fromPrice, toPrice);
 //        } catch(Exception ex) {
 //
 //        }
@@ -79,8 +78,7 @@ public class SearchLaptopFacade implements SearchLaptopInterface {
 
     public void checkLaptopMarkLenovo(){
 //        try{
-            YandexMarketServicePage page = (fullFilteringPage == null ? marketPage : fullFilteringPage);//11!! нашли кмоп с помощью расширенного поиска вренулись на ноутбуки, то fullmultiplepage ,будет не налл. нужна лоогическая проверка!
-            page.checkBySearchCondition(YandexMarketComputersConsts.LENOVO);
+            marketPage.checkBySearchCondition(YandexMarketComputersConsts.LENOVO);
 
 //        } catch(Exception ex) {
 //
@@ -89,8 +87,7 @@ public class SearchLaptopFacade implements SearchLaptopInterface {
 
     public void checkLaptopMarkHP(){
 //        try{
-            YandexMarketServicePage page = (fullFilteringPage == null ? marketPage : fullFilteringPage);
-            page.checkBySearchCondition(YandexMarketComputersConsts.HP);
+            marketPage.checkBySearchCondition(YandexMarketComputersConsts.HP);
 
 //        } catch(Exception ex) {
 
@@ -128,8 +125,7 @@ public class SearchLaptopFacade implements SearchLaptopInterface {
 
     public void findLaptopInMarketByName(String laptopName){
 //        try{
-            YandexMarketServicePage page = (fullFilteringPage == null ? marketPage : fullFilteringPage);
-            page.performSearchingProductItemByName(laptopName);
+            marketPage.performSearchingProductItemByName(laptopName);
 //        } catch(Exception ex) {
 //
 //        }
