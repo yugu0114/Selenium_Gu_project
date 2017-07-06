@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 160.174 sec <<< FAILURE!
+count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[0](testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test)  Time elapsed: 67.275 sec  <<< FAILURE!
+java.lang.AssertionError: Count of laptops ([Ljava.lang.String;@355493bf and price between , 30000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10(Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.java:100)
+
+count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[1](testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test)  Time elapsed: 68.822 sec  <<< FAILURE!
+java.lang.AssertionError: Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10(Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.java:100)
+

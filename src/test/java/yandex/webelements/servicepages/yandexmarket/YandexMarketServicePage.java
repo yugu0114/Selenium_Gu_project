@@ -8,9 +8,7 @@ import yandex.webelements.servicepages.YandexServicePage;
 
 import java.util.List;
 
-/**
- * Created by 1 on 20.06.2017.
- */
+
 public class YandexMarketServicePage extends YandexServicePage {
     private WebDriver webDriver;
 
@@ -45,7 +43,7 @@ public class YandexMarketServicePage extends YandexServicePage {
         webDriver.findElement(locator).sendKeys(productName);
 
         locator = By.xpath("//button [span [.=\"" + YandexMarketConsts.SEARCH + "\"]]");
-//        waitForClickableState(locator);
+        waitForLoad(locator);
         webDriver.findElement(locator).click();
     }
 

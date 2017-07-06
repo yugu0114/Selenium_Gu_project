@@ -1,0 +1,72 @@
+{
+  "statistic" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 1
+  },
+  "time" : {
+    "minDuration" : 68767,
+    "maxDuration" : 68767,
+    "sumDuration" : 68767,
+    "start" : 1499374989156,
+    "stop" : 1499375057923,
+    "duration" : 68767
+  },
+  "children" : [ {
+    "uid" : "b87eba0118524151",
+    "name" : "Product defects",
+    "time" : {
+      "minDuration" : 68767,
+      "maxDuration" : 68767,
+      "sumDuration" : 68767,
+      "start" : 1499374989156,
+      "stop" : 1499375057923,
+      "duration" : 68767
+    },
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "61f6a28eb193851d",
+      "name" : "AssertionError: Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>",
+      "time" : {
+        "minDuration" : 68767,
+        "maxDuration" : 68767,
+        "sumDuration" : 68767,
+        "start" : 1499374989156,
+        "stop" : 1499375057923,
+        "duration" : 68767
+      },
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "83465db2f4d617f3",
+        "name" : "First check: check if searching results equals to 10",
+        "time" : {
+          "start" : 1499374989156,
+          "stop" : 1499375057923,
+          "duration" : 68767
+        },
+        "status" : "failed",
+        "flaky" : true,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test" time="157.468" tests="4" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="idea.version" value="14.0.3"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_05\jre\bin"/>
+    <property name="java.vm.version" value="25.5-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7533"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Selenium_Gu_project"/>
+    <property name="java.runtime.version" value="1.8.0_05-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache\apache-maven-3.2.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_05\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\CUDA 6.0\Toolkit\bin;D:\CUDA 6.0\Toolkit\libnvvp;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;D:\MATLAB\R2014a\runtime\win64;D:\MATLAB\R2014a\bin;D:\MATLAB\R2014a\polyspace\bin;D:\Python2.7;D:\OpenCV2.2\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Program Files\apache\apache-maven-3.2.3\bin;D:\CUDA 6.0\Toolkit\bin\nvcc.exe;D:\Microsoft Visual Studio 10.0\VC\bin\amd64;D:\WinMerge;C:\Program Files\nodejs\;D:\Anaconda2;D:\Anaconda2\Scripts;D:\Anaconda2\Library\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\1\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\1"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="D:\IntelliJ IDEA 14.0.3\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="1"/>
+    <property name="java.class.path" value="C:\Program Files\apache\apache-maven-3.2.3\boot\plexus-classworlds-2.5.1.jar;D:\IntelliJ IDEA 14.0.3\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_05\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=14.0.3 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_05"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_05\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_05\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache\apache-maven-3.2.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[0]" classname="testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test" time="67.275">
+    <failure message="Count of laptops ([Ljava.lang.String;@355493bf and price between , 30000) in result tests isn&apos;t 10. Results: 12 expected:&lt;12&gt; but was:&lt;10&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Count of laptops ([Ljava.lang.String;@355493bf and price between , 30000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10(Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.java:100)
+]]></failure>
+    <system-err><![CDATA[1499374912324	geckodriver	INFO	Listening on 127.0.0.1:8531
+1499374914924	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1499374920264	Marionette	INFO	Listening on port 20108
+1499374923387	Marionette	INFO	startBrowser 8fe2e30d-9b17-4671-ba43-2bfdceb1a620
+��� 07, 2017 1:02:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://market.yandex.ru/?clid=505&utm_source=face_abovesearch&utm_campaign=face_abovesearch, line 21: ReferenceError: $ is not defined
+JavaScript error: https://market.yandex.ru/catalog/54544/list?hid=91013&track=fr_ctlg, line 21: ReferenceError: $ is not defined
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: ReferenceError: $ is not defined
+JavaScript error: https://yastatic.net/market-skubi/_/nk-yTjC_ErTuoijhNoQkS8-41Cg.js, line 1: ReferenceError: BEM is not defined
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "config" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "Teleport" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "metrika" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "Ecommerce" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "page" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "Response" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 1: r: Cant find module "cart" . Add the path in "require.path" or define a module via the "require.define".
+JavaScript error: https://market.yandex.ru/catalog/54544/list?hid=91013&track=fr_ctlg, line 70: ReferenceError: $ is not defined
+JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 30: Error: Unacceptable overhead for "all-filters_click": 85ms.
+]]></system-err>
+  </testcase>
+  <testcase name="checking_global_searching_works_fine_for_laptops[0]" classname="testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test" time="12.892"/>
+  <testcase name="count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[1]" classname="testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test" time="68.822">
+    <failure message="Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn&apos;t 10. Results: 12 expected:&lt;12&gt; but was:&lt;10&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10(Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.java:100)
+]]></failure>
+    <system-err>JavaScript error: https://yastatic.net/market-skubi/_/rPQnjXBwq-Z-dS9Jce3IYq6K_SQ.js, line 30: Error: Unacceptable overhead for "all-filters_click": 56ms.
+</system-err>
+  </testcase>
+  <testcase name="checking_global_searching_works_fine_for_laptops[1]" classname="testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test" time="8.479"/>
+</testsuite>

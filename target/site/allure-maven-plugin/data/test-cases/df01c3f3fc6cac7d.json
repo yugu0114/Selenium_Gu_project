@@ -1,0 +1,48 @@
+{
+  "uid" : "df01c3f3fc6cac7d",
+  "name" : "Second check: check if searching by filter and global searching returns the same item",
+  "fullName" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.checking_global_searching_works_fine_for_laptops[0]",
+  "historyId" : "d04f37119a52b6b8361ac27cfadb62d",
+  "time" : {
+    "start" : 1499374975883,
+    "stop" : 1499374988645,
+    "duration" : 12762
+  },
+  "status" : "passed",
+  "description" : "",
+  "descriptionHtml" : "",
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Yandex Market"
+  }, {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "host",
+    "value" : "1PC"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Test searching laptops"
+  }, {
+    "name" : "thread",
+    "value" : "8676@1PC.main(1)"
+  }, {
+    "name" : "suite",
+    "value" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "checking_global_searching_works_fine_for_laptops[0]"
+  }, {
+    "name" : "package",
+    "value" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test"
+  } ],
+  "parameters" : [ ],
+  "hidden" : true,
+  "extra" : { }
+}

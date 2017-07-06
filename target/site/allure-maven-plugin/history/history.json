@@ -1,0 +1,41 @@
+{
+  "d04f37119a52b6b8361ac27cfadb62d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c7263fe3032f3bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1499375057928,
+        "stop" : 1499375066409,
+        "duration" : 8481
+      }
+    } ]
+  },
+  "3f5a7696f894cf6293c00948c2c834f8" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83465db2f4d617f3",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>",
+      "time" : {
+        "start" : 1499374989156,
+        "stop" : 1499375057923,
+        "duration" : 68767
+      }
+    } ]
+  }
+}

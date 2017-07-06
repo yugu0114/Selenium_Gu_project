@@ -1,0 +1,67 @@
+{
+  "uid" : "83465db2f4d617f3",
+  "name" : "First check: check if searching results equals to 10",
+  "fullName" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[1]",
+  "historyId" : "3f5a7696f894cf6293c00948c2c834f8",
+  "time" : {
+    "start" : 1499374989156,
+    "stop" : 1499375057923,
+    "duration" : 68767
+  },
+  "status" : "failed",
+  "statusDetails" : {
+    "message" : "AssertionError: Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>",
+    "trace" : "java.lang.AssertionError: Count of laptops ([Ljava.lang.String;@3f033664 and price between 20000, 25000) in result tests isn't 10. Results: 12 expected:<12> but was:<10>\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\n\tat org.junit.Assert.assertEquals(Assert.java:118)\n\tat org.junit.Assert.assertEquals(Assert.java:555)\n\tat testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10(Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.java:100)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:483)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.rules.Verifier$1.evaluate(Verifier.java:35)\n\tat org.junit.rules.RunRules.evaluate(RunRules.java:20)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:483)\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:158)\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:86)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)\n",
+    "flaky" : true
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Yandex Market"
+  }, {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "host",
+    "value" : "1PC"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "story",
+    "value" : "Test searching laptops"
+  }, {
+    "name" : "thread",
+    "value" : "8676@1PC.main(1)"
+  }, {
+    "name" : "suite",
+    "value" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test"
+  }, {
+    "name" : "testClass",
+    "value" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[1]"
+  }, {
+    "name" : "package",
+    "value" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test"
+  } ],
+  "parameters" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "970c28c3b57b528",
+      "status" : "failed",
+      "time" : {
+        "start" : 1499374908919,
+        "stop" : 1499374975720,
+        "duration" : 66801
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects"
+    } ]
+  }
+}

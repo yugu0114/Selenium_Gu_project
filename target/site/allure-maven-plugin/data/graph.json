@@ -1,0 +1,21 @@
+[ {
+  "uid" : "83465db2f4d617f3",
+  "name" : "First check: check if searching results equals to 10",
+  "time" : {
+    "start" : 1499374989156,
+    "stop" : 1499375057923,
+    "duration" : 68767
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7263fe3032f3bf",
+  "name" : "Second check: check if searching by filter and global searching returns the same item",
+  "time" : {
+    "start" : 1499375057928,
+    "stop" : 1499375066409,
+    "duration" : 8481
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

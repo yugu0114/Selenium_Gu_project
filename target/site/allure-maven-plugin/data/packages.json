@@ -1,0 +1,62 @@
+{
+  "statistic" : {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 2
+  },
+  "time" : {
+    "minDuration" : 8481,
+    "maxDuration" : 68767,
+    "sumDuration" : 77248,
+    "start" : 1499374989156,
+    "stop" : 1499375066409,
+    "duration" : 77253
+  },
+  "children" : [ {
+    "uid" : "ed09a29531208318",
+    "name" : "testlaptops.Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test",
+    "time" : {
+      "minDuration" : 8481,
+      "maxDuration" : 68767,
+      "sumDuration" : 77248,
+      "start" : 1499374989156,
+      "stop" : 1499375066409,
+      "duration" : 77253
+    },
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "83465db2f4d617f3",
+      "name" : "count_of_HP_and_Lenovo_laptops_which_are_cheaper_than_30000_must_be_10[1]",
+      "time" : {
+        "start" : 1499374989156,
+        "stop" : 1499375057923,
+        "duration" : 68767
+      },
+      "status" : "failed",
+      "flaky" : true,
+      "type" : "TestCaseNode"
+    }, {
+      "uid" : "c7263fe3032f3bf",
+      "name" : "checking_global_searching_works_fine_for_laptops[1]",
+      "time" : {
+        "start" : 1499375057928,
+        "stop" : 1499375066409,
+        "duration" : 8481
+      },
+      "status" : "passed",
+      "flaky" : true,
+      "type" : "TestCaseNode"
+    } ]
+  } ]
+}

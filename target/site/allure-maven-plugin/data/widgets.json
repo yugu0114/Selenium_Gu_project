@@ -1,0 +1,46 @@
+{
+  "summary" : {
+    "reportName" : "Allure Report",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "time" : {
+      "minDuration" : 8481,
+      "maxDuration" : 68767,
+      "sumDuration" : 77248,
+      "start" : 1499374989156,
+      "stop" : 1499375066409,
+      "duration" : 77253
+    }
+  },
+  "environment" : [ ],
+  "history-trend" : [ {
+    "failed" : 1,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 1,
+    "unknown" : 0,
+    "total" : 2
+  } ],
+  "behaviors" : {
+    "total" : 1,
+    "items" : [ {
+      "name" : "Yandex Market",
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      }
+    } ]
+  },
+  "executors" : [ ],
+  "launches" : [ ]
+}

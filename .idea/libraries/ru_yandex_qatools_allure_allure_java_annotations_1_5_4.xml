@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="ru.yandex.qatools.allure:allure-java-annotations:1.5.4" type="repository">
+    <properties maven-id="ru.yandex.qatools.allure:allure-java-annotations:1.5.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

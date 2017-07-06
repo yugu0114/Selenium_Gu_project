@@ -1,0 +1,16 @@
+yandex\constants\YandexMarketConsts.class
+yandex\webelements\servicepages\yandexmarket\YandexMarketFullFilteringPage.class
+webbrowser\instances\FirefoxStandaloneBrowser.class
+testlaptops\Find_In_YandexMarket_Laptop_By_Price_and_Trade_Mark_Test.class
+webbrowser\instances\IEStandaloneBrowser.class
+yandex\webelements\YandexStartPage.class
+webbrowser\instances\ChromeStandaloneBrowser.class
+yandex\webelements\YandexBasePage.class
+webbrowser\instances\BrowserConsts.class
+exceptions\NotSuchServiceException.class
+yandex\constants\YandexStartPageConsts.class
+yandex\webelements\servicepages\YandexServicePage.class
+testlaptops\SearchLaptopFacade.class
+yandex\webelements\servicepages\yandexmarket\YandexMarketServicePage.class
+testlaptops\SearchLaptopInterface.class
+yandex\constants\YandexMarketComputersConsts.class
